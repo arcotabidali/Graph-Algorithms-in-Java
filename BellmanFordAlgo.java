@@ -24,7 +24,7 @@ class BellmanFordAlog
            for(int[] edge : edges){
                if(distance[edge[0]]+edge[2]<distance[edge[1]]){
                   distance[edge[1]]=Integer.MIN_VALUE;
-                  path[edge[1]]=-2; // indicating parth of negetive weight loop.// dont know how to diffrentiate
+                  path[edge[1]]=-2; // indicating part of negetive weight loop.// can't diffrentiate
                }                    // between actual part of loop and affected by negative loops
        }
      
